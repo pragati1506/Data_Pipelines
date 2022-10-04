@@ -1,0 +1,17 @@
+# Data_Pipelines
+
+###Install Airflow on the machine
+
+
+Installing Software and Libraries.
+username@desktop_name:~ sudo apt install python3-pip
+username@desktop_name:~ pip3 install apache-airflow
+username@desktop_name:~ pip3 install sklearn
+username@desktop_name:~ airflow db init
+username@desktop_name:~ start the webserver
+username@desktop_name:~ airflow db init airflow webserver –p 8080
+username@desktop_name:~ start the scheduler
+username@desktop_name:~ airflow scheduler
+username@desktop_name:~ create a user admin 
+username@desktop_name:~ airflow users create --role Admin --username admin –email
+admin --firstname admin --lastname admin --password admin
